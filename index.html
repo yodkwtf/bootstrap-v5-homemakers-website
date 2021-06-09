@@ -12,13 +12,18 @@
       integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x"
       crossorigin="anonymous"
     />
-    <!-- css -->
-    <link rel="stylesheet" href="styles.css" />
     <!-- bootstrap icons cdn -->
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css"
     />
+    <!-- mapbox cdn -->
+    <link
+      href="https://api.mapbox.com/mapbox-gl-js/v2.1.1/mapbox-gl.css"
+      rel="stylesheet"
+    />
+    <!-- css -->
+    <link rel="stylesheet" href="styles.css" />
   </head>
 
   <body>
@@ -518,11 +523,60 @@
     </section>
     <!-- ! END OF TEAM -->
 
-    <!-- bootstrap js bundle cdn -->
+    <!-- ! CONTACT AND LOCATION -->
+    <section class="p-5">
+      <div class="container">
+        <div class="row g-5">
+          <!-- contact info -->
+          <article class="col-md">
+            <h3 class="text-center mb-4">Contact Info</h3>
+            <ul class="list-group list-group-flush lead">
+              <li class="list-group-item">
+                <span class="fw-bold">Location:</span> 17 A Baker Street, London
+              </li>
+              <li class="list-group-item">
+                <span class="fw-bold">Phone:</span> 9999666699
+              </li>
+              <li class="list-group-item">
+                <span class="fw-bold">Email:</span> hey@example.com
+              </li>
+              <li class="list-group-item">
+                <span class="fw-bold">Accounts Phone:</span> 9996669966
+              </li>
+              <li class="list-group-item">
+                <span class="fw-bold">Accounts Email:</span>
+                accounts@example.com
+              </li>
+            </ul>
+          </article>
+
+          <!-- map -->
+          <article class="col-md">
+            <div id="map"></div>
+          </article>
+        </div>
+      </div>
+    </section>
+    <!-- ! END OF CONTACT AND LOCATION -->
+
+    <!-- ****** JAVASCRIPT ****** -->
+    <!-- bootstrap -->
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
       crossorigin="anonymous"
     ></script>
+    <!-- mapbox -->
+    <script src="https://api.mapbox.com/mapbox-gl-js/v2.1.1/mapbox-gl.js"></script>
+    <script>
+      mapboxgl.accessToken =
+        'pk.eyJ1IjoiZGVla2F5eSIsImEiOiJja29pdGhqMjAwM2R4MnVtbGw4MG5ydGtyIn0.GG7Ddv4mM1c61qu-groh9w';
+      var map = new mapboxgl.Map({
+        container: 'map',
+        style: 'mapbox://styles/mapbox/streets-v11',
+        center: [77.026634, 28.459497],
+        zoom: 18,
+      });
+    </script>
   </body>
 </html>
