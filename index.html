@@ -73,7 +73,68 @@
               voluptates obcaecati iure amet est debitis facilis suscipit
               dolorem minus quaerat?
             </p>
-            <button class="btn btn-primary btn-lg">Start The Enrollment</button>
+            <button
+              class="btn btn-primary btn-lg"
+              data-bs-toggle="modal"
+              data-bs-target="#enroll"
+            >
+              Start The Enrollment
+            </button>
+
+            <!-- * MODAL START -->
+            <aside class="modal fade text-dark" id="enroll" tabindex="-1">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <!-- header -->
+                  <article class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">
+                      Enroll Here
+                    </h5>
+                    <button
+                      type="button"
+                      class="btn-close"
+                      data-bs-dismiss="modal"
+                    ></button>
+                  </article>
+
+                  <!-- body -->
+                  <article class="modal-body">
+                    <p class="lead">
+                      Fill out the form and we wll get back to you!
+                      <form >
+                        <div class="mb-3">
+                          <label for="name" class="col-form-label">Name:</label>
+                          <input type="text" class="form-control" id="name" placeholder="John Doe">
+                        </div>
+                        <div class="mb-3">
+                          <label for="email" class="col-form-label">Email:</label>
+                          <input type="text" class="form-control" id="email" placeholder="johndoe@mail.com">
+                        </div>
+                        <div class="mb-3">
+                          <label for="contact" class="col-form-label">Contact:</label>
+                          <input type="text" class="form-control" id="contact" placeholder="9966996699">
+                        </div>
+                      </form>
+                    </p>
+                  </article>
+
+                  <!-- footer -->
+                  <footer class="modal-footer">
+                    <button
+                      type="button"
+                      class="btn btn-secondary"
+                      data-bs-dismiss="modal"
+                    >
+                      Cancel
+                    </button>
+                    <button type="button" class="btn btn-primary">
+                      Submit
+                    </button>
+                  </footer>
+                </div>
+              </div>
+            </aside>
+            <!-- * MODAL END -->
           </article>
 
           <!-- hero-image -->
