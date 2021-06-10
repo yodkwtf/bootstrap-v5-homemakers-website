@@ -10,6 +10,12 @@ body::before {
   border-radius: 0.25rem;
 }
 
+.hero {
+  min-height: calc(100vh - 72px - 192px);
+  display: grid;
+  place-items: center;
+}
+
 @media (min-width: 768px) {
   .news-input {
     width: 50%;
