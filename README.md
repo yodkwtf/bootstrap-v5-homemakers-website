@@ -13,7 +13,7 @@ A project website built for a house renovation company called HomeMakers. The we
 - SASS
 - npm
 
-## Acknowledgements
+## Resources Used
 
 - [Bootstrap Offcial Docs](https://getbootstrap.com/)
 - [Images and Illustrations](https://undraw.co/illustrations)
